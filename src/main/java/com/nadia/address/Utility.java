@@ -25,7 +25,7 @@ public class Utility {
     private static final int BUFFER_LENGTH_1024 = 1024;
     // HTTP код 400 для проверки ошибок
     private static final int RESPONSE_CODE_400 = 400;
-    private static Type listType = new TypeToken<ArrayList>() {}.getType();
+    private static final Type LIST_TYPE = new TypeToken<ArrayList<Place>>() {}.getType();
 
     public static class Place {
         String display_name;
@@ -139,7 +139,7 @@ public class Utility {
 
     private static List<Place> extractPlaces(String jsonData) {
         Gson gson = new Gson();
-        List<Place> places = gson.fromJson(jsonData, listType);
+        List<Place> places = gson.fromJson(jsonData, LIST_TYPE);
         return places;
     }
 
