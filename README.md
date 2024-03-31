@@ -1,5 +1,7 @@
 # address-search-utility
 
+[![Java CI](https://github.com/javadev/address-search-utility/actions/workflows/maven.yml/badge.svg)](https://github.com/javadev/address-search-utility/actions/workflows/maven.yml)
+
 Задача:
 Написать программу, которая с консоли считывает адрес (в пределах Петербурга), и выводит список всех мест, которые находятся по этому адресу (кафе, магазины и так далее).
 
